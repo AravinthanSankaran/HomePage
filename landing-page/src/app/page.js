@@ -18,13 +18,14 @@ export default function Home() {
       <div>
         <Image
           src={logo}
+          className="mx-16"
           alt="Motherland Textile India Logo"
           width={100}
           height={50}
         />
 
         <nav className="bg-customPurple text-white p-4 flex justify-center">
-          <ul className="flex space-x-10 ">
+          <ul className="flex space-x-10 cursor-pointer ">
             <li>Home</li>
             <li>Group Profile</li>
             <li>Infrastructure</li>
@@ -37,14 +38,14 @@ export default function Home() {
         </nav>
       </div>
       {/* Hero Section */}
-      <section className="relative bg-gray-100 py-16 text-center">
+      <section className="relative bg-gray-100  text-center">
         <Image
           src={banner}
           alt="Motherland Textile India Banner"
           objectFit="cover"
-          className="w-full h-12"
+          className="w-full h-96"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
+        <div className="absolute inset-0 flex flex-col  justify-center items-center bg-black bg-opacity-50">
           <h1 className="text-4xl font-bold text-white">
             Threads of <span className="text-yellow-600">Quality</span>, Woven
             with Pride
@@ -52,7 +53,7 @@ export default function Home() {
           <p className="mt-4 text-lg text-white">
             Welcome to Motherland Textile India
           </p>
-          <button className="mt-4 bg-customPurple text-white py-2 px-4 rounded">
+          <button className="mt-4 bg-customPurple text-white py-2 px-4 rounded-full">
             Know More
           </button>
         </div>
@@ -90,10 +91,10 @@ export default function Home() {
       </div>
 
       {/* Infrastructure Section */}
-      <section className="bg-gray-100 py-16 text-center">
+      <section className="bg-gray-100 py-10 text-center">
         <h2 className="text-3xl font-bold">Infrastructure</h2>
         <p className="mt-4">Dur et labor et dolore magna aliqua...</p>
-        <ul className="mt-8 flex justify-center space-x-8 list-none">
+        <ul className="mt-8 flex justify-center space-x-8">
           <li className="p-4 rounded shadow  bg-customPurple">
             <h3 className="mt-2 font-bold ">Warping</h3>
           </li>
